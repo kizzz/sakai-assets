@@ -6,14 +6,19 @@ url = "https://api.githubcopilot.com/mcp/"
 
 # Shared local development MCP: Maximal :5005 and Echo API :5006.
 # OAuth grants stay local to each developer; see workspace docs/agent-operations.md.
+
+# Shared local development MCP: Maximal :5005 and Echo API :5006.
+# OAuth grants stay local to each developer; see workspace docs/agent-operations.md.
+
+# Shared local development MCP: Maximal :5005 and Echo API :5006.
+# OAuth grants stay local to each developer; see workspace docs/agent-operations.md.
 [mcp_servers.eleon_admin]
 url = "https://localhost:5005/_sys/mcp/admin"
 enabled = true
 startup_timeout_sec = 120
 tool_timeout_sec = 120
-scopes = ["admin.read", "admin.identity.read", "admin.sessions.read", "admin.tenants.read", "admin.services.read", "admin.observability.read", "admin.queues.read", "admin.automation.read", "admin.notifications.read", "admin.settings.read", "admin.providers.read", "admin.content.read", "admin.workflows.read", "admin.platform.read", "offline_access"]
 [mcp_servers.eleon_admin.oauth]
-client_id = "codex-local-admin"
+client_id = "site-c8b3ab886b19f084b56f168b"
 callback_url = "http://127.0.0.1:56001/callback"
 callback_port = 56001
 
@@ -22,9 +27,8 @@ url = "https://localhost:5005/_sys/mcp/super-admin"
 enabled = true
 startup_timeout_sec = 120
 tool_timeout_sec = 120
-scopes = ["superadmin.read", "superadmin.identity.read", "superadmin.sessions.read", "superadmin.tenants.read", "superadmin.services.read", "superadmin.observability.read", "superadmin.queues.read", "superadmin.automation.read", "superadmin.notifications.read", "superadmin.settings.read", "superadmin.providers.read", "superadmin.content.read", "superadmin.workflows.read", "superadmin.platform.read", "offline_access"]
 [mcp_servers.eleon_superadmin.oauth]
-client_id = "codex-local-superadmin"
+client_id = "site-c8b3ab886b19f084b56f168b"
 callback_url = "http://127.0.0.1:56002/callback"
 callback_port = 56002
 
@@ -33,19 +37,17 @@ url = "https://localhost:5005/_sys/mcp/accounting"
 enabled = true
 startup_timeout_sec = 120
 tool_timeout_sec = 120
-scopes = ["accounting.read", "accounting.accounts.read", "accounting.plans.read", "accounting.subscriptions.read", "accounting.invoices.read", "accounting.usage.read", "accounting.reporting.read", "accounting.payments.read", "offline_access"]
 [mcp_servers.eleon_accounting.oauth]
-client_id = "codex-local-accounting"
+client_id = "site-c8b3ab886b19f084b56f168b"
 callback_url = "http://127.0.0.1:56003/callback"
 callback_port = 56003
 
 [mcp_servers.eleon_echo]
-url = "https://localhost:5005/_sys/mcp/echo-support"
+url = "https://echo.localhost:5005/_sys/mcp/echo-support"
 enabled = true
 startup_timeout_sec = 120
 tool_timeout_sec = 120
-scopes = ["support.read", "publishing.read", "forms.read", "dashboards.read", "connections.read", "collectors.read", "bots.read", "website_agents.read", "offline_access"]
 [mcp_servers.eleon_echo.oauth]
-client_id = "codex-local-echo"
+client_id = "site-c8b3ab886b19f084b56f168b"
 callback_url = "http://127.0.0.1:56004/callback"
 callback_port = 56004
