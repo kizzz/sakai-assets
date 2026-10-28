@@ -6,12 +6,6 @@ url = "https://api.githubcopilot.com/mcp/"
 
 # Shared local development MCP: Maximal :5005 and Echo API :5006.
 # OAuth grants stay local to each developer; see workspace docs/agent-operations.md.
-
-# Shared local development MCP: Maximal :5005 and Echo API :5006.
-# OAuth grants stay local to each developer; see workspace docs/agent-operations.md.
-
-# Shared local development MCP: Maximal :5005 and Echo API :5006.
-# OAuth grants stay local to each developer; see workspace docs/agent-operations.md.
 [mcp_servers.eleon_admin]
 url = "https://localhost:5005/_sys/mcp/admin"
 enabled = true
