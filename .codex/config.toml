@@ -11,8 +11,9 @@ url = "https://localhost:5005/_sys/mcp/admin"
 enabled = true
 startup_timeout_sec = 120
 tool_timeout_sec = 120
+scopes = ["openid", "offline_access", "profile", "email", "mcp.admin.automation.read", "mcp.admin.automation.write", "mcp.admin.content.read", "mcp.admin.content.write", "mcp.admin.identity.read", "mcp.admin.identity.write", "mcp.admin.notifications.read", "mcp.admin.notifications.write", "mcp.admin.observability.read", "mcp.admin.observability.write", "mcp.admin.platform.read", "mcp.admin.platform.write", "mcp.admin.providers.read", "mcp.admin.providers.write", "mcp.admin.queues.read", "mcp.admin.queues.write", "mcp.admin.read", "mcp.admin.services.read", "mcp.admin.services.write", "mcp.admin.sessions.read", "mcp.admin.sessions.revoke", "mcp.admin.settings.read", "mcp.admin.settings.write", "mcp.admin.tenants.provision", "mcp.admin.tenants.read", "mcp.admin.tenants.write", "mcp.admin.workflows.read", "mcp.admin.workflows.write", "mcp.admin.write"]
 [mcp_servers.eleon_admin.oauth]
-client_id = "site-c8b3ab886b19f084b56f168b"
+client_id = "site-default"
 callback_url = "http://127.0.0.1:56001/callback"
 callback_port = 56001
 
@@ -21,8 +22,9 @@ url = "https://localhost:5005/_sys/mcp/super-admin"
 enabled = true
 startup_timeout_sec = 120
 tool_timeout_sec = 120
+scopes = ["openid", "offline_access", "profile", "email", "mcp.superadmin.automation.read", "mcp.superadmin.automation.write", "mcp.superadmin.content.read", "mcp.superadmin.content.write", "mcp.superadmin.identity.read", "mcp.superadmin.identity.write", "mcp.superadmin.notifications.read", "mcp.superadmin.notifications.write", "mcp.superadmin.observability.read", "mcp.superadmin.observability.write", "mcp.superadmin.platform.read", "mcp.superadmin.platform.write", "mcp.superadmin.providers.read", "mcp.superadmin.providers.write", "mcp.superadmin.queues.read", "mcp.superadmin.queues.write", "mcp.superadmin.read", "mcp.superadmin.services.read", "mcp.superadmin.services.write", "mcp.superadmin.sessions.read", "mcp.superadmin.sessions.revoke", "mcp.superadmin.settings.read", "mcp.superadmin.settings.write", "mcp.superadmin.tenants.provision", "mcp.superadmin.tenants.read", "mcp.superadmin.tenants.write", "mcp.superadmin.workflows.read", "mcp.superadmin.workflows.write", "mcp.superadmin.write"]
 [mcp_servers.eleon_superadmin.oauth]
-client_id = "site-c8b3ab886b19f084b56f168b"
+client_id = "site-default"
 callback_url = "http://127.0.0.1:56002/callback"
 callback_port = 56002
 
@@ -31,8 +33,9 @@ url = "https://localhost:5005/_sys/mcp/accounting"
 enabled = true
 startup_timeout_sec = 120
 tool_timeout_sec = 120
+scopes = ["openid", "offline_access", "profile", "email", "mcp.accounting.accounts.read", "mcp.accounting.accounts.write", "mcp.accounting.admin", "mcp.accounting.files", "mcp.accounting.invoices.read", "mcp.accounting.invoices.write", "mcp.accounting.payments.execute", "mcp.accounting.payments.read", "mcp.accounting.payments.refund", "mcp.accounting.payments.write", "mcp.accounting.plans.read", "mcp.accounting.plans.write", "mcp.accounting.read", "mcp.accounting.reporting.read", "mcp.accounting.subscriptions.read", "mcp.accounting.subscriptions.write", "mcp.accounting.usage.read", "mcp.accounting.usage.write", "mcp.accounting.write"]
 [mcp_servers.eleon_accounting.oauth]
-client_id = "site-c8b3ab886b19f084b56f168b"
+client_id = "site-default"
 callback_url = "http://127.0.0.1:56003/callback"
 callback_port = 56003
 
@@ -41,7 +44,8 @@ url = "https://echo.localhost:5005/_sys/mcp/echo-support"
 enabled = true
 startup_timeout_sec = 120
 tool_timeout_sec = 120
+scopes = ["openid", "offline_access", "profile", "email", "mcp.bots.admin", "mcp.bots.erase", "mcp.bots.files", "mcp.bots.publish", "mcp.bots.read", "mcp.bots.write", "mcp.collectors.admin", "mcp.collectors.erase", "mcp.collectors.files", "mcp.collectors.read", "mcp.collectors.write", "mcp.connections.admin", "mcp.connections.erase", "mcp.connections.files", "mcp.connections.read", "mcp.connections.write", "mcp.dashboards.admin", "mcp.dashboards.erase", "mcp.dashboards.files", "mcp.dashboards.read", "mcp.dashboards.write", "mcp.forms.admin", "mcp.forms.erase", "mcp.forms.files", "mcp.forms.publish", "mcp.forms.read", "mcp.forms.write", "mcp.publishing.admin", "mcp.publishing.erase", "mcp.publishing.files", "mcp.publishing.publish", "mcp.publishing.read", "mcp.publishing.write", "mcp.support.admin", "mcp.support.erase", "mcp.support.files", "mcp.support.read", "mcp.support.write", "mcp.website_agents.admin", "mcp.website_agents.erase", "mcp.website_agents.files", "mcp.website_agents.publish", "mcp.website_agents.read", "mcp.website_agents.write"]
 [mcp_servers.eleon_echo.oauth]
-client_id = "site-c8b3ab886b19f084b56f168b"
+client_id = "site-default"
 callback_url = "http://127.0.0.1:56004/callback"
 callback_port = 56004
