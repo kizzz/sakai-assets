@@ -1,0 +1,8 @@
+
+
+# Local agent state; keep reusable skills, documentation and tools.
+!**/.agents/
+**/.agents/*
+!**/.agents/skills/
+!**/.agents/docs/
+!**/.agents/tools/
