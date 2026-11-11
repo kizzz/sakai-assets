@@ -3,6 +3,9 @@
 # Local agent state; keep reusable skills, documentation and tools.
 !**/.agents/
 **/.agents/*
-!**/.agents/skills/
-!**/.agents/docs/
+!**/.codex/skills/
+!**/docs/agents/
 !**/.agents/tools/
+
+# Generated agent execution files.
+.agents/
