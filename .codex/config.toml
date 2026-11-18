@@ -5,9 +5,13 @@ url = "https://api.githubcopilot.com/mcp/"
 "X-MCP-Toolsets" = "repos,projects,issues"
 
 # Shared local development MCP: Maximal :5005 and Echo API :5006.
+
+# Shared local development MCP: platform localhost HTTPS; Echo echo.localhost HTTPS.
+
+# Shared local development MCP: selected local HTTPS gateway origins from docs/URLS.txt.
 # OAuth grants stay local to each developer; see workspace docs/agent-operations.md.
 [mcp_servers.eleon_admin]
-url = "https://localhost:5005/_sys/mcp/admin"
+url = "https://localhost:5001/_sys/mcp/admin"
 enabled = true
 startup_timeout_sec = 120
 tool_timeout_sec = 120
@@ -18,7 +22,7 @@ callback_url = "http://127.0.0.1:56001/callback"
 callback_port = 56001
 
 [mcp_servers.eleon_superadmin]
-url = "https://localhost:5005/_sys/mcp/super-admin"
+url = "https://localhost:5001/_sys/mcp/super-admin"
 enabled = true
 startup_timeout_sec = 120
 tool_timeout_sec = 120
@@ -29,7 +33,7 @@ callback_url = "http://127.0.0.1:56002/callback"
 callback_port = 56002
 
 [mcp_servers.eleon_accounting]
-url = "https://localhost:5005/_sys/mcp/accounting"
+url = "https://localhost:5001/_sys/mcp/accounting"
 enabled = true
 startup_timeout_sec = 120
 tool_timeout_sec = 120
@@ -40,7 +44,7 @@ callback_url = "http://127.0.0.1:56003/callback"
 callback_port = 56003
 
 [mcp_servers.eleon_echo]
-url = "https://echo.localhost:5005/_sys/mcp/echo-support"
+url = "https://echo.dev.localhost:5005/_sys/mcp/echo-support"
 enabled = true
 startup_timeout_sec = 120
 tool_timeout_sec = 120
